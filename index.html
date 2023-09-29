@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChadGPT & BetaGPT</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    #output {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+
+<h1>ChadGPT & BetaGPT</h1>
+
+<label for="userInput">Enter your prompt:</label><br>
+<textarea id="userInput" rows="4" cols="50"></textarea><br><br>
+
+<button onclick="getChadResponse()">Get ChadGPT Response</button>
+<button onclick="getBetaResponse()">Get BetaGPT Response</button>
+
+<div id="output"></div>
+
+<script>
+    function getChadResponse() {
+        var userInput = document.getElementById('userInput').value;
+        // Simulate ChadGPT Response
+        var chadResponse = "ChadGPT: " + "Be bold! " + userInput; // Simplified response
+        document.getElementById('output').innerText = chadResponse;
+    }
+
+    function getBetaResponse() {
+        var userInput = document.getElementById('userInput').value;
+        // Simulate BetaGPT Response
+        var betaResponse = "BetaGPT: " + "Take it easy. " + userInput; // Simplified response
+        document.getElementById('output').innerText = betaResponse;
+    }
+</script>
+
+</body>
+</html>
