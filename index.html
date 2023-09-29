@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChadGPT & BetaGPT</title>
+<title>ChadGPT</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -18,12 +18,12 @@
 </head>
 <body>
 
-<h1>ChadGPT & BetaGPT</h1>
+<h1>ChadGPT</h1>
 
 <label for="userInput">Enter your prompt:</label><br>
 <textarea id="userInput" rows="4" cols="50"></textarea><br><br>
 
-<button onclick="getChadResponse()">Get ChadGPT Response</button>
+<button onclick="getChadResponse()">Chad Shit Only</button>
 <button onclick="getBetaResponse()">Get BetaGPT Response</button>
 
 <div id="output"></div>
@@ -32,14 +32,14 @@
     function getChadResponse() {
         var userInput = document.getElementById('userInput').value;
         // Simulate ChadGPT Response
-        var chadResponse = "ChadGPT: " + "Be bold! " + userInput; // Simplified response
+        var chadResponse = "ChadGPT: " + "Be bold!"; // Simplified response
         document.getElementById('output').innerText = chadResponse;
     }
 
     function getBetaResponse() {
         var userInput = document.getElementById('userInput').value;
         // Simulate BetaGPT Response
-        var betaResponse = "BetaGPT: " + "Take it easy. " + userInput; // Simplified response
+        var betaResponse = "BetaGPT: " + "Take it easy."; // Simplified response
         document.getElementById('output').innerText = betaResponse;
     }
 </script>
